@@ -1,21 +1,17 @@
+a=int(input('Inserte un valor de la lista: (0:suma, 1:resta, 2:multiplicacion, 3=:divicion, 4:exponente, 5:resto)\n'))
 x=float(input('Inserte el primer valor: '))
 y=float(input('Inserte el segundo valor: '))
-z=int(input('''Inserte un valor de la lista:
-0=suma
-1=resta
-2=multiplicacion
-3=divicion
-4=exponente
-'''))
-if z==0:
+if a==0:
     print('El resultado es ',x+y)
-elif z==1:
+elif a==1:
     print('El resultado es ',x-y)
-elif z==2:
+elif a==2:
     print('El resultado es ',x*y)
-elif z==3:
+elif a==3:
     print('El resultado es ',x/y)
-elif z==4:
+elif a==4:
     print('El resultado es ',x**y)
+elif a==5:
+    print('El resultado es ',x%y)
 else:
     print('Opcion no disponible')
